@@ -79,12 +79,7 @@ header h1 {
   margin-left: 20px;
 }
 
-.langue {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
-}
+
 
 .progressbar-wrapper {
   background-color: #dfe6e9;
@@ -117,8 +112,19 @@ header h1 {
   margin-left: 20px;
 }
 
-
 button{
+  background-color: #2b4b26;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  margin: 5px;
+  margin-left: 0px;
+  border-radius: 15px;
+  cursor: pointer;
+  align-content: center;
+}
+
+#btnScrollToTop {
   background-color: #2b4b26;
   color: white;
   border: none;
@@ -127,6 +133,7 @@ button{
   margin-left: 0px;
   border-radius: 15px;
   cursor: pointer;
+  align-content: center;
 }
 
 a {
