@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1><a href="#accueil">Mon Portfolio</a></h1>
+    <nav>
+        <ul>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#competences">Competences</a></li>
+            <li><a href="#scool">Scolarite</a></li>
+            <li><a href="#projets">Projets</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="profil">
+    <img src="img/moi.jpg" alt="">
+    <section id="accueil">
+        <h1><span>Sofia Kiseleva</span></h1>
+        <p><span>Etudiante</span></p>
+        <div class ="description">
+            <p>Je suis Sofia Kiseleva, je suis une etudiante en deuxieme annee de prepa integree Polytech en lien avec le BUT INFO de Nantes.</p>
+            <p>De nature artistique et créative, je trouve également ma passion dans le domaine de l'informatique et de la robotique.</p>
+            <section id="Contact">
+                <p>Vous pouvez me contacter via:</p>
+            </section>
+            <div>
+                <!-- Boutons -->
+                <button onclick="copyEmail()">Mon Mail</button>
+                <button onclick="copyNumber()">Telephone</button>
+                <button><a href="https://fr.linkedin.com/in/sofia-kiseleva-234807299?trk=people-guest_people_search-card">Mon LinkedIn</a></button>
+            </div>
+            <div>
+                <p>Vous trouvez mon CV <a href="cv/CV_Sofia_Kiseleva.pdf">ici</a></p>
+            </div>
+        </div>
+        <!--   <div class="boutonsdebut">-->
+        <!--     <div class="bcompetences">-->
+        <!--       <br>-->
+
+
+        <!--     </div>-->
+        <!--     <div class="bscolarite">-->
+        <!--       <br>-->
+        <!--     </div>-->
+        <!--     <div class="bautre"><br></div>-->
+        <!--   </div>-->
+    </section>
+
+</div>
+
+
+<!-- Script pour les boutons -->
+<script>
+    function copyEmail() {
+        const email = 'sofia.kiseleva658@gmail.com'; // Remplacez avec votre adresse e-mail
+        navigator.clipboard.writeText(email).then(function() {
+            alert("L'adresse e-mail a été copiée : " + email);
+        }, function() {
+            alert("La copie de l'adresse e-mail a échoué.");
+        });
+    }
+
+    function copyNumber() {
+        const number = '07 62 23 48 77'; // Remplacez avec votre numéro de téléphone
+        navigator.clipboard.writeText(number).then(function() {
+            alert("Le numéro de téléphone a été copié : " + number);
+        }, function() {
+            alert("La copie du numéro de téléphone a échoué.");
+        });
+    }
+</script>
+</div>
+
+<button onclick="scrollToTop()" id="btnScrollToTop" title="Retour en haut">↑</button>
+<script>
+    // Fonction pour faire défiler la page vers le haut
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // Fait défiler en douceur
+        });
+    }
+    // Sélection du bouton
+    const btnScrollToTop = document.getElementById("btnScrollToTop");
+
+    // Fonction pour afficher ou masquer le bouton en fonction de la position de défilement
+    function toggleScrollToTopButton() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            btnScrollToTop.style.display = "block";
+        } else {
+            btnScrollToTop.style.display = "none";
+        }
+    }
+
+    // Écouteur d'événement de défilement pour appeler la fonction
+    window.onscroll = function() {
+        toggleScrollToTopButton();
+    };
+</script>
+
+
+
+
+<section id="competences">
+    <h2>Competences</h2>
+    <div class="competences">
+        <div class="competence">
+            <h3>HTML</h3>
+            <div class="progressbar-wrapper">
+                <div title="progress" class="progressbar" style="width: 70%;">70%</div>
+            </div>
+        </div>
+        <div class="competence">
+            <h3>CSS</h3>
+            <div class="progressbar-wrapper">
+                <div title="progress" class="progressbar" style="width: 60%;">60%</div>
+            </div>
+        </div>
+        <div class="competence">
+            <h3>JavaScript</h3>
+            <div class="progressbar-wrapper">
+                <div title="progress" class="progressbar" style="width: 40%;">40%</div>
+            </div>
+        </div>
+        <div class="competence">
+            <h3>Python</h3>
+            <div class="progressbar-wrapper">
+                <div title="progress" class="progressbar" style="width: 60%;">60%</div>
+            </div>
+        </div>
+        <div class="competence">
+            <h3>Java</h3>
+            <div class="progressbar-wrapper">
+                <div title="progress" class="progressbar" style="width: 40%;">40%</div>
+            </div>
+        </div>
+        <div class="competence">
+            <h3>SQL</h3>
+            <div class="progressbar-wrapper">
+                <div title="progress" class="progressbar" style="width: 50%;">50%</div>
+            </div>
+        </div>
+        <div class="competence">
+            <h3>Kotlin</h3>
+            <div class="progressbar-wrapper">
+                <div title="progress" class="progressbar" style="width: 60%;">60%</div>
+            </div>
+        </div>
+        <div class="competence">
+            <h3>Golang</h3>
+            <div class="progressbar-wrapper">
+                <div title="progress" class="progressbar" style="width: 60%;">60%</div>
+            </div>
+        </div>
+        <div class="competence">
+            <h3>Git</h3>
+            <div class="progressbar-wrapper">
+                <div title="progress" class="progressbar" style="width: 50%;">50%</div>
+            </div>
+        </div>
+        <div class="competence">
+            <h3>Arduino</h3>
+            <div class="progressbar-wrapper">
+                <div title="progress" class="progressbar" style="width: 60%;">60%</div>
+            </div>
+        </div>
+        <div class="competence">
+            <h3>Assembler</h3>
+            <div class="progressbar-wrapper">
+                <div title="progress" class="progressbar" style="width: 40%;">40%</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const competences = document.querySelectorAll('.competence');
+
+        competences.forEach(competence => {
+            const barre = competence.querySelector('.progressbar');
+            const pourcentage = barre.style.width;
+            barre.style.width = '0';
+            barre.style.transition = 'width 1s';
+            setTimeout(() => {
+                barre.style.width = pourcentage;
+            }, 1000);
+        });
+    });
+
+</script>
+
+
+<section id="langues">
+    <h2>Langues parlees</h2>
+    <div class="langues">
+        <div class="langue">
+            <h3>Francais</h3>
+            <div class="progressbar-wrapper">
+                <div title="progress" class="progressbar" style="width: 90%;">90%</div>
+            </div>
+        </div>
+        <div class="langue">
+            <h3>Russe</h3>
+            <div class="progressbar-wrapper">
+                <div title="progress" class="progressbar" style="width: 95%;">95%</div>
+            </div>
+        </div>
+        <div class="langue">
+            <h3>Anglais</h3>
+            <div class="progressbar-wrapper">
+                <div title="progress" class="progressbar" style="width: 80%;">80%</div>
+            </div>
+        </div>
+        <div class="langue">
+            <h3>Espagnol</h3>
+            <div class="progressbar-wrapper">
+                <div title="progress" class="progressbar" style="width: 60%;">60%</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const langues = document.querySelectorAll('.langue');
+
+        langues.forEach(langue => {
+            const barre = langue.querySelector('.progressbar');
+            const pourcentage = barre.style.width;
+            barre.style.width = '0';
+            barre.style.transition = 'width 1s';
+            setTimeout(() => {
+                barre.style.width = pourcentage;
+            }, 1000);
+        });
+    });
+
+</script>
+
+<section id="logiciels">
+    <h2>Logiciels deja utilises</h2>
+    <div class="logiciels">
+        <div class="logiciel">
+            <h3>SolidWorks</h3>
+            <div class="progressbar-wrapper">
+                <div title="progress" class="progressbar" style="width: 70%;">70%</div>
+            </div>
+            <h3>cisco</h3>
+            <div class="progressbar-wrapper">
+                <div title="progress" class="progressbar" style="width: 60%;">60%</div>
+            </div>
+            <h3>WireShark</h3>
+            <div class="progressbar-wrapper">
+                <div title="progress" class="progressbar" style="width: 50%;">50%</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const logiciels = document.querySelectorAll('.logiciel');
+
+        logiciels.forEach(logiciel => {
+            const barre = logiciel.querySelector('.progressbar');
+            const pourcentage = barre.style.width;
+            barre.style.width = '0';
+            barre.style.transition = 'width 1s';
+            setTimeout(() => {
+                barre.style.width = pourcentage;
+            }, 1000);
+        });
+    });
+</script>
+
+
+<section id="scool">
+    <div class="scool">
+        <h1>Scolarite</h1>
+        <div class="dotline" style="height: 25px;"></div>
+        <div class="point">
+            <div class="txtpointopo">2019 <span>-Stage de 3eme </span><p id="troisieme">En savoir plus</p>
+                <div id="troisieme_texte" style="display: none;">
+                    Pendant mon stage de troisieme, j'ai passe une semaine chez <a href="https://www.blackpepper.fr/en/homepage/">Black Pepper Yachts</a>, une entreprise specialisee dans la construction de yachts. Au cours de ce stage, j'ai eu l'occasion d'observer le travail d'un ingenieur ainsi que celui des ouvriers qui travaillaient sur le bateau de l'Occitane en Provence pour la course "Vendee Globe".
+                </div>
+            </div>
+        </div>
+        <div class="dotline" style="height: 125px;"></div>
+        <div class="point">
+            <div class="txtpoint">2020 - 2023 <a href="https://appert.paysdelaloire.e-lyco.fr/">Lycee Nicolas Appert</a>, Orvault<br><span>Filiere STI2D specialite SIN en Terminale</span></div>
+        </div>
+        <div class="dotline" style="height: 90px;"></div>
+        <div class="point">
+            <div class="txtpointopo">2021 - 2023 Club Robotique <p id="robot_toggle">En savoir plus</p>
+                <div id="robot_texte" style="display: none;">
+                    Pendant ma premiere et ma terminale, j'ai participe a l'atelier club de robotique de mon lycee, dans le cadre des concours de "Planete Science" et de la Coupe de France de Robotique. Je suis fier de dire que notre equipe a decroche la troisieme place lors de la competition en 2022.
+                </div>
+            </div>
+        </div>
+        <div class="dotline" style="height: 90px;"></div>
+        <div class="point">
+            <div class="txtpoint">1er projet <br><a href="#projet1">En savoir plus</a> </div>
+        </div>
+        <div class="dotline" style="height: 80px;"></div>
+        <div class="point">
+            <div class="txtpointopo">2eme projet <br><a href="#projet2">En savoir plus</a> </div>
+        </div>
+        <div class="dotline" style="height: 75px;"></div>
+        <div class="point">
+            <div class="txtpoint">2022-2023 <span>Cordees de la reussite</span><p id="cord_toggle">En savoir plus</p>
+                <div id="cord_texte" style="display: none;">
+                    Pendant ma derniere année de lycee, j'ai eu l'opportunite de participer au programme "Cordees de la reussite". Dans le cadre de ce programme, j'ai ete implique dans l'accompagnement d'une eleve de seconde pour l'aider dans ses cours de mathematiques.
+                </div>
+            </div>
+        </div>
+        <div class="dotline" style="height: 75px;"></div>
+        <div class="point">
+            <div class="txtpointopo">3eme projet <br><a href="#projet3">En savoir plus</a> </div>
+        </div>
+        <div class="dotline" style="height: 115px;"></div>
+        <div class="point">
+            <div class="txtpoint">2023 - . . . . IUT Informatique, Nantes<br><span>Prepa integree polytech (peip)</span></div>
+        </div>
+        <div class="dotline" style="height: 75px;"></div>
+        <div class="point">
+            <div class="txtpointopo">4eme projet <br><a href="#projet4">En savoir plus</a> </div>
+        </div>
+        <div class="dotline" style="height: 75px; margin-bottom: 70px;"></div>
+    </div>
+</section>
+
+
+
+
+<script>
+    const toggleButton3eme = document.getElementById('troisieme');
+    const content3eme = document.getElementById('troisieme_texte');
+
+    toggleButton3eme.addEventListener('click', function() {
+        if (content3eme.style.display === 'none' || content3eme.style.display === '') {
+            content3eme.style.display = 'block';
+            toggleButton3eme.textContent = 'Masquer le texte';
+        } else {
+            content3eme.style.display = 'none';
+            toggleButton3eme.textContent = 'En savoir plus';
+        }
+    });
+
+    const toggleButtonRobot = document.getElementById('robot_toggle');
+    const contentRobot = document.getElementById('robot_texte');
+
+    toggleButtonRobot.addEventListener('click', function() {
+        if (contentRobot.style.display === 'none' || contentRobot.style.display === '') {
+            contentRobot.style.display = 'block';
+            toggleButtonRobot.textContent = 'Masquer le texte';
+        } else {
+            contentRobot.style.display = 'none';
+            toggleButtonRobot.textContent = 'En savoir plus';
+        }
+    });
+
+    const toggleButtonCord = document.getElementById('cord_toggle');
+    const contentCord = document.getElementById('cord_texte');
+
+    toggleButtonCord.addEventListener('click', function() {
+        if (contentCord.style.display === 'none' || contentCord.style.display === '') {
+            contentCord.style.display = 'block';
+            toggleButtonCord.textContent = 'Masquer le texte';
+        } else {
+            contentCord.style.display = 'none';
+            toggleButtonCord.textContent = 'En savoir plus';
+        }
+    });
+</script>
+
+
+
+<section id="projets">
+    <h2>Projets realises</h2>
+</section>
+
+
+<a class="projet">
+    <img src="img/equipe_sup_tel.jpg" alt="">
+    <div class="text">
+        <section id="projet1">
+            <h1> Projet 1 <span>· 2021</span></h1>
+        </section>
+        <h2>Support Telephone</h2>
+        <p>Le premier projet que j'ai pu realiser etait un support telephone concu pour s'adapter a toutes les tailles de telephones. Il devait permettre aussi bien le format paysage que le format portrait. De plus, il devait etre compact, facilitant ainsi son transport dans une poche. Un autre aspect important etait la prevision d'un emplacement pour une telecommande, ce qui permettrait de prendre des photos avec plus de praticite.</p>
+    </div>
+</a>
+
+<a class="projet">
+    <img src="img/vitrine.jpeg" alt="">
+    <div class="text">
+        <section id="projet2">
+            <h1>Projet 2 <span>· 2022</span></h1>
+        </section>
+        <h2>Vitrine Projet Robotique</h2>
+        <p>Le deuxieme projet que j'ai pu realiser etait la conception d'une vitrine et d'une statuette dans le cadre d'un projet de robotique. Lorsque le robot deposait la statuette, il etait necessaire qu'un element lumineux s'active.</p>
+    </div>
+</a>
+
+<a class="projet">
+    <img src="img/serre_mini.jpeg" alt="">
+    <div class="text">
+        <section id="projet3">
+            <h1>Projet 3 <span>· 2023</span></h1>
+        </section>
+        <h2>Serre Autonome Personnelle</h2>
+        <p>Pour mon projet de terminale, j'ai choisi de developper une serre autonome personnelle. J'ai ete charge d'interconnecter tous les capteurs et les actionneurs, et d'automatiser leur activation et leur desactivation en fonction des donnees transmises par le site web. Cela impliquait egalement le processus de selection de la plante sur le site, avec les informations ensuite transmises de Raspberry Pi vers Arduino, ou je les recuperais pour le controle du systeme.</p>
+    </div>
+</a>
+
+<a class="projet">
+    <img src="img/go.jpeg" alt="">
+    <div class="text">
+        <section id="projet4">
+            <h1>Projet 4 <span>· 2024</span></h1>
+        </section>
+        <h2>Jeu Golang</h2>
+        <p>L'un des premiers projets realises en premiere annee etait un jeu de Quadtree en Golang, ou l'on pouvait choisir les extensions que l'on souhaitait. Lors de ce projet, nous avons pu explorer les concepts des arbres Quadtree et les mettre en pratique dans un environnement de programmation reel.</p>
+    </div>
+</a>
+
+
+
+
+</body>
+</html>
+
+<!--263c4b-->
+
